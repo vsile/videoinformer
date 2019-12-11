@@ -1,4 +1,4 @@
-//curl -X POST localhost:4000/api/uploadVideo -F file=@goserver/veneravideo/files/filmMP4v5_h264.mp4
+//curl -X POST localhost:4000/api/uploadVideo -F file=@path/to/your/video
 //На сервере должен быть установлен ffmpeg
 package main
 
