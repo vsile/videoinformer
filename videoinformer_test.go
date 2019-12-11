@@ -48,8 +48,8 @@ func TestUploadVideoHandler(t *testing.T) {
     rr := httptest.NewRecorder()
     http.HandlerFunc(uploadVideoHandler).ServeHTTP(rr, req)
     if status := rr.Code; status != http.StatusOK {
-		t.Errorf("Status code differs. Expected %d .\n Got %d instead", http.StatusOK, status)
-	}
+	t.Errorf("Status code differs. Expected %d .\n Got %d instead", http.StatusOK, status)
+    }
 
     resp := rr.Result()
     body, err := ioutil.ReadAll(resp.Body); defer resp.Body.Close()
