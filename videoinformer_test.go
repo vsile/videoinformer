@@ -30,8 +30,8 @@ func TestUploadVideoHandler(t *testing.T) {
     if err != nil { t.Fatal(err) }
 
     b := bytes.Buffer{}
-	writer := multipart.NewWriter(&b)
-	part, err := writer.CreateFormFile("file", path)
+    writer := multipart.NewWriter(&b)
+    part, err := writer.CreateFormFile("file", path)
     if err != nil { t.Fatal(err) }
 	
     _, err = io.Copy(part, file)
