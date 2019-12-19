@@ -1,5 +1,5 @@
 //curl -X POST localhost:4000/api/uploadVideo -F file=@path/to/your/video
-//На сервере должен быть установлен ffmpeg
+//ffmpeg is required
 package main
 
 import (
